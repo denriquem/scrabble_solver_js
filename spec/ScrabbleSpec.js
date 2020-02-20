@@ -25,4 +25,8 @@ describe("Scrabble", function() {
   it('should score correct points for word with 1 and 2 score letters', function(){
     expect(scrabble.score('Dog')).toEqual(5);
   });
+
+  it('should score value for each character for the world Long', function(){
+    expect(scrabble.score('Long')).toEqual(5);
+  });
 });
