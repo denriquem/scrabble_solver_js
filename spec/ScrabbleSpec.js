@@ -14,7 +14,11 @@ describe("Scrabble", function() {
     expect(scrabble.score('T')).toEqual(1);
   });
 
-  it('should retunr 2 when passed AT', function(){
+  it('should return 2 when passed AT', function(){
     expect(scrabble.score('AT')).toEqual(2);
+  });
+
+  it('should score 2 when passed D', function(){
+    expect(scrabble.score('D')).toEqual(2);
   });
 });
