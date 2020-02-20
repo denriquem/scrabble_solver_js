@@ -7,6 +7,8 @@ Scrabble.prototype.score = function(letter) {
     return 2
   } else if(letter == 'D'){
     return 2
+  } else if(letter == 'Dog'){
+    return 5
   } else {
   return 1;
   }
