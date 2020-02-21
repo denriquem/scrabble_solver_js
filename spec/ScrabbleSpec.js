@@ -29,4 +29,8 @@ describe("Scrabble", function() {
   it('should score value for each character for the world Long', function(){
     expect(scrabble.score('Long')).toEqual(5);
   });
+
+  it('should score a word containing letters which are 1, 2 and 3 points', function(){
+    expect(scrabble.score('Cabbage')).toEqual(14);
+  });
 });
