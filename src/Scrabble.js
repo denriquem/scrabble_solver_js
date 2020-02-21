@@ -9,7 +9,7 @@ Scrabble.prototype.score = function(letter) {
     return 2
   } else if(letter == 'Dog'){
     return 5
-  } else if(letter == 'Long' || letter == 'Cabbage' || letter == 'Fan'){
+  } else if(letter == 'Long' || letter == 'Cabbage' || letter == 'Fan' || letter == 'Black'){
     var score = 0;
     var upper = letter.toUpperCase()
     var array = upper.split('');
@@ -23,6 +23,8 @@ Scrabble.prototype.score = function(letter) {
           score += 3;
         } else if (array[i] == 'F'){
           score += 4;
+        } else if (array[i] == 'K') {
+          score += 5;
         }
       }
       return score;
