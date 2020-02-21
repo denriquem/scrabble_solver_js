@@ -33,4 +33,8 @@ describe("Scrabble", function() {
   it('should score a word containing letters which are 1, 2 and 3 points', function(){
     expect(scrabble.score('Cabbage')).toEqual(14);
   });
+
+  it('should score a word containg 4 point letters', function(){
+    expect(scrabble.score('Fan')).toEqual(6);
+  });
 });
