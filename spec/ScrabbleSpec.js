@@ -38,7 +38,11 @@ describe("Scrabble", function() {
     expect(scrabble.score('Fan')).toEqual(6);
   });
 
-  it('shoul score word containing a 5 point letter', function(){
+  it('should score word containing a 5 point letter', function(){
     expect(scrabble.score('Black')).toEqual(13);
+  });
+
+  it('should score word containing an 8 point letter', function(){
+    expect(scrabble.score('Jack')).toEqual(17);
   });
 });
