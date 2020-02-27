@@ -45,4 +45,8 @@ describe("Scrabble", function() {
   it('should score word containing an 8 point letter', function(){
     expect(scrabble.score('Jack')).toEqual(17);
   });
+
+  it('should correctly score some monsterous word', function(){
+    expect(scrabble.score('OXYPHENBUTAZONE')).toEqual(41);
+  })
 });
